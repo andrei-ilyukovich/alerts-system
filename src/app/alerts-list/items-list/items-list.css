@@ -1,0 +1,14 @@
+.scrollable {
+    overflow-y: auto; 
+    height:300px;
+    border-bottom: 2px dotted gray;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h3{
+    margin-top: 0;
+    color: gray;
+    padding-top: 20px;
+    padding-left: 30px;
+}

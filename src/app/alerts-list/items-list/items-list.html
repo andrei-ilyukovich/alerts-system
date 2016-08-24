@@ -1,0 +1,23 @@
+<h3>Now</h3>
+<div class="items scrollable">
+
+    <alert-item *ngFor="let item of nowItems | reverseOrder" [item]="item" (delete)="delete.emit(item)">
+    </alert-item>
+
+</div>
+
+<h3>Minute ago</h3>
+<div class="items scrollable">
+
+    <alert-item *ngFor="let item of oneMinuteItems | reverseOrder" [item]="item" (delete)="delete.emit(item)">
+    </alert-item>
+
+</div>
+
+<h3>Long time ago</h3>
+<div class="items scrollable">
+
+    <alert-item *ngFor="let item of longAgoItems | reverseOrder" [item]="item" (delete)="delete.emit(item)">
+    </alert-item>
+
+</div>

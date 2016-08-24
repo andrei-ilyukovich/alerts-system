@@ -1,0 +1,17 @@
+<div class="item">
+
+    <div class="item-icon" [ngClass]="getBackgroundColorClass(item)">
+        <span class="item-level">{{item.level}}</span>
+    </div>
+
+    <div class="item-text description-block">
+        <span class="description item-title">{{item.title}}</span>
+        <span class="description">{{item.description}}</span>
+    </div>
+
+    <span class="item-text">{{item.timestamp | date:'medium'}}</span>
+    <span class="item-text item-date">{{getLivePeriod(item)}}</span>
+
+    <button class="item-del" (click)="delete.emit(item)">X</button>
+
+</div>

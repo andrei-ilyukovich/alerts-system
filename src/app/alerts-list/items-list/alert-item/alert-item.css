@@ -1,0 +1,86 @@
+.item {
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 0;
+	background: #fafafa;
+	display: flex;
+	justify-content: space-around;
+	align-items:flex-start;
+	border-bottom: 1px solid lightgray;
+	}
+
+.item-text {
+	flex: 2;
+	align-self: center;
+	height: 55px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  	overflow: hidden;
+	text-align: center;
+}
+
+.item-date {
+	flex: 1;
+}
+
+.description-block {
+	display: flex;
+	flex-direction: column;
+	flex: 5;
+	align-items: flex-start;
+}
+
+.description {
+	align-self: baseline;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  	overflow: hidden;
+	width: 90%;
+	text-align: left;
+}
+
+.item-title {
+	color: black;
+	font-size: 25px;
+}
+
+.item-icon {
+	border-radius: 50px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	color: white;
+}
+
+.item-level{
+	position: relative;
+	top:14px;
+}
+
+.item-del {
+	align-self: center;
+	border-radius: 5px;
+	margin-right: 30px;
+}
+
+.info {
+	background: blue;
+}
+
+.debug {
+	background: green;
+}
+
+.warn {
+	background: orange;
+}
+
+.error {
+	background: red;
+}
+
+.default {
+	background: white;
+}
